@@ -1,5 +1,13 @@
 # SW-Lab-2024-2
 
+# گزارش پروژه
+
+## شروع پروژه (ساخت مخزن و جدول Kanban)
+<div dir="rtl">
+پس از آنکه پروژه را در قالب یک ریپوی جدید ایجاد کردیم، تسک‌های لازم را در یک پروژه Kanban به صورت زیر مشخص می‌کنیم.
+
+![image](https://github.com/AmiraliE1380/SW-Lab-2024-2/blob/main/images/Kanban_initial.png)
+
 
 
 ## پرسش 1
