@@ -39,11 +39,12 @@ public class Main {
         library.lendBook(book2, student3);
         library.returnBook(book2, student3);
         library.lendBook(book4, student2);
-
+        library.returnBook(book1, student1);
         library.lendBook(book5, student1);
 
         // Example for search functions
         var keys = new ArrayList<Object>(Arrays.asList(10, 11));
+        library.searchStudents(SearchByType.ID, keys);
         library.searchBooks(SearchByType.ID, keys); // Should return [book1, book2]
         library.searchBooks(SearchByType.NAME, keys); // Should return null
     }
