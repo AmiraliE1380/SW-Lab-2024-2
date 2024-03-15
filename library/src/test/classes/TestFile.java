@@ -1,5 +1,6 @@
 package test.classes;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+
 import org.junit.jupiter.api.Test;
 import main.classes.*;
 public class TestFile {
@@ -16,7 +17,7 @@ public class TestFile {
         library.addStudent(student1);
 
         library.lendBook(book1, student2);
-        assertEquals(student2.hasBook(book1), false);
+        assertFalse(student2.hasBook(book1));
 
     }
 
@@ -34,6 +35,6 @@ public class TestFile {
 
         library.lendBook(book1, student1);
         library.returnBook(book1, student1);
-        assertEquals(student1.hasBook(book1), false);
+        assertFalse(student1.hasBook(book1));
     }
 }
