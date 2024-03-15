@@ -20,4 +20,20 @@ public class TestFile {
 
     }
 
+
+    @Test
+    public void testReturnBook(){
+        Library library = new Library();
+        Book book1 = new Book("Book-1", "Author-1", 10);
+
+        Student student1 = new Student("Alice", 10);
+
+        library.addBook(book1);
+
+        library.addStudent(student1);
+
+        library.lendBook(book1, student1);
+        library.returnBook(book1, student1);
+        assertEquals(student1.hasBook(book1), false);
+    }
 }
