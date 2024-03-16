@@ -82,29 +82,7 @@ public class Library {
      */
     public ArrayList<Student> searchStudents(SearchByType searchByType, ArrayList<Object> keys) {
         // TODO complete function
-        ArrayList<Student> searchResults = new ArrayList<>();
-            switch (searchByType) {
-                case ID:
-                    // Perform search by name
-                    for (Student student : students) {
-                        if (keys.contains(student.getID())) {
-                            searchResults.add(student);
-                        }
-                    }
-                    break;
-                case NAME:
-                    // Perform search by id
-                    for (Student student : students) {
-                        if (keys.contains(student.getName())) {
-                            searchResults.add(student);
-                        }
-                    }
-                    break;
-                // Add more cases for other search types if needed
-                default:
-                    return null;
-            }
-            return searchResults;
+        return null;
     }
 
     /**
@@ -116,36 +94,8 @@ public class Library {
      * @return             The list of books that match the search criteria. Returns null if search type is name.
      */
     public ArrayList<Book> searchBooks(SearchByType searchByType, ArrayList<Object> keys) {
-        ArrayList<Book> searchResults = new ArrayList<>();
-        switch (searchByType) {
-            case ID:
-                // Perform search by id
-                for (Book book : books) {
-                    if (keys.contains(book.getID())) {
-                        searchResults.add(book);
-                    }
-                }
-                break;
-            case TITLE:
-                // Perform search by title
-                for (Book book : books) {
-                    if (keys.contains(book.getTitle())) {
-                        searchResults.add(book);
-                    }
-                }
-                break;
-            case AUTHOR:
-                // Perform search by author
-                for (Book book : books){
-                    if(keys.contains(book.getAuthor())){
-                        searchResults.add(book);
-                    }
-                }
-            // Add more cases for other search types if needed
-            default:
-                return null;
-        }
-        return searchResults;
+        // TODO complete function
+        return null;
     }
 
     /**

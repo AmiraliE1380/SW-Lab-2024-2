@@ -17,10 +17,6 @@ public class Student {
         return name;
     }
 
-    public int getID(){
-        return id;
-    }
-
     public boolean hasBook(Book book) {
         return this.books.contains(book);
     }
