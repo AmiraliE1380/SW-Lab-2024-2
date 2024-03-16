@@ -74,14 +74,14 @@ public class TestFile {
         keysID.add(10);
         keysID.add("book1");
 
-        assertNull(library.searchStudents(SearchByType.NAME, keysTitle));
+        assertNull(library.searchBooks(SearchByType.NAME, keysTitle));
         
-        assertArrayEquals(library.searchStudents(SearchByType.TITLE, keysTitle).toArray(), new Book[] {book1, book2});
-        assertArrayEquals(library.searchStudents(SearchByType.AUTHOR, keysAuthor).toArray(), new Book[] {book1, book3});
-        assertArrayEquals(library.searchStudents(SearchByType.ID, keysID).toArray(), new Book[] {book2, book3});
+        assertArrayEquals(library.searchBooks(SearchByType.TITLE, keysTitle).toArray(), new Book[] {book1, book2});
+        assertArrayEquals(library.searchBooks(SearchByType.AUTHOR, keysAuthor).toArray(), new Book[] {book1, book3});
+        assertArrayEquals(library.searchBooks(SearchByType.ID, keysID).toArray(), new Book[] {book2, book3});
     }
 
-    
+
     @Test
     void testSearchStudents() {
         Library library = new Library();

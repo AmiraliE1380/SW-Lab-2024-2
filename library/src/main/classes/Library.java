@@ -83,28 +83,28 @@ public class Library {
     public ArrayList<Student> searchStudents(SearchByType searchByType, ArrayList<Object> keys) {
         // TODO complete function
         ArrayList<Student> searchResults = new ArrayList<>();
-            switch (searchByType) {
-                case ID:
-                    // Perform search by name
-                    for (Student student : students) {
-                        if (keys.contains(student.getID())) {
-                            searchResults.add(student);
-                        }
+        switch (searchByType) {
+            case ID:
+                // Perform search by name
+                for (Student student : students) {
+                    if (keys.contains(student.getID())) {
+                        searchResults.add(student);
                     }
-                    break;
-                case NAME:
-                    // Perform search by id
-                    for (Student student : students) {
-                        if (keys.contains(student.getName())) {
-                            searchResults.add(student);
-                        }
+                }
+                break;
+            case NAME:
+                // Perform search by id
+                for (Student student : students) {
+                    if (keys.contains(student.getName())) {
+                        searchResults.add(student);
                     }
-                    break;
-                // Add more cases for other search types if needed
-                default:
-                    return null;
-            }
-            return searchResults;
+                }
+                break;
+            // Add more cases for other search types if needed
+            default:
+                return null;
+        }
+        return searchResults;
     }
 
     /**
