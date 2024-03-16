@@ -44,8 +44,44 @@ public class TestFile {
         assertFalse(student1.hasBook(book1));
     }
 
+    
+    @Test
+    void testSearchBooks() {
+        Library library = new Library();
+        Book book1 = new Book("book1", "author1", 0);
+        Book book2 = new Book("book2", "author2", 1);
+        Book book3 = new Book("book3", "author3", 2);
 
+        library.addBook(book1);
+        library.addBook(book2);
+        library.addBook(book3);
 
+        ArrayList<Object> keysTitle = new ArrayList<>();
+        keysTitle.add("book1");
+        keysTitle.add("book2");
+        keysTitle.add("book10");
+        keysTitle.add(2);
+
+        ArrayList<Object> keysAuthor = new ArrayList<>();
+        keysAuthor.add("author1");
+        keysAuthor.add("author3");
+        keysAuthor.add("author10");
+        keysAuthor.add(1);
+
+        ArrayList<Object> keysID = new ArrayList<>();
+        keysID.add(1);
+        keysID.add(2);
+        keysID.add(10);
+        keysID.add("book1");
+
+        assertNull(library.searchStudents(SearchByType.NAME, keysTitle));
+        
+        assertArrayEquals(library.searchStudents(SearchByType.TITLE, keysTitle).toArray(), new Book[] {book1, book2});
+        assertArrayEquals(library.searchStudents(SearchByType.AUTHOR, keysAuthor).toArray(), new Book[] {book1, book3});
+        assertArrayEquals(library.searchStudents(SearchByType.ID, keysID).toArray(), new Book[] {book2, book3});
+    }
+
+    
     @Test
     void testSearchStudents() {
         Library library = new Library();
