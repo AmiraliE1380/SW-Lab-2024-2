@@ -44,6 +44,8 @@ public class TestFile {
         assertFalse(student1.hasBook(book1));
     }
 
+
+
     @Test
     void testSearchStudents() {
         Library library = new Library();
@@ -53,6 +55,7 @@ public class TestFile {
 
         library.addStudent(student1);
         library.addStudent(student2);
+        library.addStudent(student3);
 
         ArrayList<Object> keysID = new ArrayList<>();
         keysID.add(0);
