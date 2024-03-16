@@ -36,6 +36,15 @@
 ![image](https://github.com/AmiraliE1380/SW-Lab-2024-2/blob/main/images/return_book_code.png)
 
 
+همچنین بایستی فیچرهایی به پروژه مدنظر اضافه می‌کردیم. در رابطه با فیچرِ سرچِ کتاب، کد بایستی سرچ بر اساسِ title، author، و ID را امکان‌پذیر سازد و در غیر این صورت (سرچ بر اساسِ name و ...) نال برگرداند. تست مربوطه را نوشته و سپس فیچر را پیاده‌سازی می‌کنیم:
+
+![image](https://github.com/AmiraliE1380/SW-Lab-2024-2/blob/main/images/search_books.png)
+
+همچنین برای دانشجو هم در صورتِ سرچ بر اساس title و author، باید نال برگردانده شود و در صورتِ سرچ با نام و ID باید سرچ جواب دهد. تست مربوطه را نوشتیم و سپس کد را تکمیل کردیم:
+
+![image](https://github.com/AmiraliE1380/SW-Lab-2024-2/blob/main/images/search_students.png)
+
+
 در پایان همه تسک‌ها تکمیل شده و آن‌ها را Done در نظر می‌گیریم.
   
 ![image](https://github.com/AmiraliE1380/SW-Lab-2024-2/blob/main/images/Kanban_final.png)
