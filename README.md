@@ -25,6 +25,16 @@
 
 ![image](https://github.com/AmiraliE1380/SW-Lab-2024-2/blob/main/images/lend_book_code.png)
 
+ایراد دوم کد این بود که اگر دانشجو کتاب را برمی‌گرداند، کتاب از لیستِ کتاب‌هایی که در دست دانشجو بود پاک نمی‌شد. تست مربوطه را می‌نویسیم:
+
+
+![image](https://github.com/AmiraliE1380/SW-Lab-2024-2/blob/main/images/return_book_test.png)
+
+کد مربوطه را به صورت زیر اصلاح می‌کنیم:
+
+
+![image](https://github.com/AmiraliE1380/SW-Lab-2024-2/blob/main/images/return_book_code.png)
+
 
 در پایان همه تسک‌ها تکمیل شده و آن‌ها را Done در نظر می‌گیریم.
   
