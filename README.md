@@ -10,13 +10,15 @@
 ![image](https://github.com/AmiraliE1380/SW-Lab-2024-2/blob/main/images/Kanban_initial.png)
 
 
+## نوشتن تست و تکمیل کد
+<div dir="rtl">
+
+  
 پروژه را از لینک مشخص شده کلون می‌کنیم.
 
 نخست بایستی دو ایراد موجود در کد را بررسی کنیم. ایراد اول مربوط به 
 
-## نوشتن تست و تکمیل کد
-<div dir="rtl">
-  در پایان همه تسک‌ها تکمیل شده و آن‌ها را Done در نظر می‌گیریم.
+در پایان همه تسک‌ها تکمیل شده و آن‌ها را Done در نظر می‌گیریم.
   
 ![image](https://github.com/AmiraliE1380/SW-Lab-2024-2/blob/main/images/Kanban_final.png)
 
